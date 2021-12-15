@@ -34,3 +34,21 @@ function buildName(firstName: string, lastName?: string) {
 buildName('John', 'Luise');
 // 不存在lastname
 buildName('John')
+
+//剩余参数
+function push(array: any[], ...items: any[]) {
+    items.forEach(item => {
+        array.push(item)
+    });
+}
+
+//联合类型
+type Lianhe = string | number;
+function typeofLianHe(x: Lianhe, y: Lianhe) {
+    if (typeof (x) == 'string' || typeof (y) === 'string') {
+        console.log(x.toString() + y.toString());
+    } else {
+        console.log(x + y);
+    }
+}
+typeofLianHe('1', '2');

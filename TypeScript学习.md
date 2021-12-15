@@ -18,4 +18,15 @@ function buildName(firstName: string, lastName?: string) {
 }
 
 ```
+```txt
+注意点：可选参数后面不允许再出现必需参数
+```
+### 参数默认值
+```ts
+lastName:string="Cat"
+```
+### 联合类型
+```ts
+type Combinable = string | number;//同时支持 string 和 number 类型
+```
 
