@@ -10,7 +10,7 @@ function test(person: Person) {
     console.log(person);
 }
 let xiaomin = {
-    name: '小民',
+    name: '小    民',
     age: 23
 }
 test(xiaomin);
